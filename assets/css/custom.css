@@ -21,8 +21,8 @@
 	padding-bottom: 50px !important;
 }
 
-#about {
-	display: none;
+#values img {
+	border-radius: 20px;
 }
 
 #home .tp-revslider-slidesli:after {
