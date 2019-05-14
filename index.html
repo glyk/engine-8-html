@@ -1260,8 +1260,8 @@
             <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
               <i class="icon-line icon-screen-smartphone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
               <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone</h3>
-              <strong class="g-font-size-16 g-color-white">+31 687 105 037</strong>
-              <strong class="g-font-size-16 g-color-white">+375 29 873 2024</strong>
+              <strong class="g-font-size-16 g-color-white">+31 687 105 037 (Netherlands)</strong><br/>
+              <strong class="g-font-size-16 g-color-white">+375 29 873 2024 (Belarus)</strong>
             </div>
 
             <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
@@ -1281,39 +1281,26 @@
         <div id="contact" class="g-color-gray-dark-v5 g-bg-gray-light-v5 g-py-30 g-py-70--md">
           <div class="container">
             <div class="u-heading-v8-2 g-mb-60">
-              <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26 g-font-secondary g-color-gray-dark-v2 g-mb-25">Have a questions?</h2>
-              <p class="mb-0">Sed eget aliquet nisl. Proin laoreet accumsan nisl non vestibulum.</p>
+              <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26 g-font-secondary g-color-gray-dark-v2 g-mb-25">Have a question?</h2>
+              <p class="mb-0">Want to receive a free quote or consultation, just drop us few lines and we will call you back!</p>
             </div>
 
-            <form>
+            <form name="contact" method="post" data-netlify="true">
               <div class="row">
                 <div class="col-md-6 form-group g-mb-30">
-                  <input id="inputGroup1_1" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" type="text" placeholder="Your name">
+                  <input id="inputGroup1_1" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" name="name" type="text" placeholder="Your name">
                 </div>
 
                 <div class="col-md-6 form-group g-mb-30">
-                  <input id="inputGroup1_2" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" type="tel" placeholder="Your phone">
-                </div>
-
-                <div class="col-md-6 form-group g-mb-30">
-                  <select id="inputGroup1_3" class="js-custom-select form-control h-100 text-left u-form-control u-select-v1 g-font-size-default g-theme-color-gray-dark-v2 g-bg-white g-brd-white g-brd-gray-light-v3--hover g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" style="width: 100%;"
-                          data-placeholder="Department"
-                          data-open-icon="fa fa-caret-down"
-                          data-close-icon="fa fa-caret-up">
-                    <option></option>
-                    <option value="Department1">Department1</option>
-                    <option value="Department2">Department2</option>
-                    <option value="Department3">Department3</option>
-                    <option value="Department4">Department4</option>
-                  </select>
-                </div>
-
-                <div class="col-md-6 form-group g-mb-30">
-                  <input id="inputGroup1_4" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" type="text" placeholder="Subject">
+                  <input id="inputGroup1_2" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" name="phone" type="tel" placeholder="Your phone">
                 </div>
 
                 <div class="col-md-12 form-group g-mb-30">
-                  <textarea id="inputGroup1_5" class="form-control g-resize-none g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" rows="6" placeholder="Message"></textarea>
+                  <input id="inputGroup1_3" class="form-control h-100 g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in"  name="email" type="email" placeholder="Your email">
+                </div>
+
+                <div class="col-md-12 form-group g-mb-30">
+                  <textarea id="inputGroup1_5" class="form-control g-resize-none g-font-size-default g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-white g-bg-white--focus g-brd-white g-brd-gray-light-v3--hover g-brd-gray-light-v3--focus g-rounded-1 g-py-13 g-px-12 g-transition-0_2 g-transition--ease-in" name="message" rows="6" placeholder="Message"></textarea>
                 </div>
               </div>
 
