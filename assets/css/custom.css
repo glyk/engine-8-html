@@ -8,3 +8,15 @@
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+#values .align-self-center {
+	flex-basis: 100%;
+}
+#values .text-lg-right p {
+	max-width: 600px;
+	margin-left: auto;
+}
+#values .g-py-30 {
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+}
