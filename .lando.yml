@@ -1,0 +1,4 @@
+name: engine-eight
+recipe: lamp
+config:
+  webroot: .
