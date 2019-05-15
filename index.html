@@ -28,11 +28,7 @@
 
     <!-- CSS Implementing Plugins -->
     <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/vendor/icon-hs/style.css">
-    <link rel="stylesheet" href="assets/vendor/icon-line-pro/style.css">
-    <link rel="stylesheet" href="assets/vendor/icon-line/css/simple-line-icons.css">
     <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" href="assets/vendor/chosen/chosen.css">
     <link rel="stylesheet" href="assets/vendor/animate.css">
     <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
 
@@ -1084,7 +1080,7 @@
       <!-- End Section Content -->
 
       <!-- Footer -->
-      <footer class="text-center">
+      <footer class="text-center" id="contact">
         <div class="g-py-30 g-py-80--md">
           <div class="container">
             <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary">
@@ -1096,37 +1092,31 @@
 
         <div class="container-fluid">
           <address class="row g-color-gray-dark-v4 mb-0">
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
-              <i class="icon-line icon-map d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-              <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Address</h3>
-              <strong class="g-font-size-16 g-color-white">In sed lectus tincidunt</strong>
+
+            <div class="col-sm-6 g-theme-bg-gray-dark-v2 px-0 g-py-60">
+              <div class="col-md-6 pull-right">
+                <i class="fa fa-phone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone</h3>
+                <strong class="g-font-size-16 g-color-white">+31 687 105 037 (Netherlands)</strong><br/>
+                <strong class="g-font-size-16 g-color-white">+375 29 873 2024 (Belarus)</strong>
+              </div>
             </div>
 
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
-              <i class="icon-line icon-screen-smartphone d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-              <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Phone</h3>
-              <strong class="g-font-size-16 g-color-white">+31 687 105 037 (Netherlands)</strong><br/>
-              <strong class="g-font-size-16 g-color-white">+375 29 873 2024 (Belarus)</strong>
+            <div class="col-sm-6 g-theme-bg-gray-dark-v1 px-0 g-py-60">
+              <div class="col-md-6 pull-left">
+                <i class="fa fa-envelope d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
+                <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Email</h3>
+                <a class="g-font-size-16 g-color-white" href="mailto:hello@engine-eight.com"><strong>hello@engine-eight.com</strong></a>
+              </div>
             </div>
 
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v1 px-0 g-py-60">
-              <i class="icon-line icon-envelope-letter d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-              <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Email</h3>
-              <a class="g-font-size-16 g-color-white" href="mailto:hello@engine-eight.com"><strong>hello@engine-eight.com</strong></a>
-            </div>
-
-            <div class="col-sm-6 col-md-3 g-theme-bg-gray-dark-v2 px-0 g-py-60">
-              <i class="icon-line icon-call-in d-inline-block g-font-size-30 g-font-size-40--md g-color-primary g-mb-30"></i>
-              <h3 class="text-uppercase g-font-size-11 g-theme-color-gray-light-v3 g-mb-5">Call free</h3>
-              <strong class="g-font-size-16 g-color-white">+48 555 1258 987</strong>
-            </div>
           </address>
         </div>
 
-        <div id="contact" class="g-color-gray-dark-v5 g-bg-gray-light-v5 g-py-30 g-py-70--md">
+        <div class="g-color-gray-dark-v5 g-bg-gray-light-v5 g-py-30 g-py-70--md">
           <div class="container">
             <div class="u-heading-v8-2 g-mb-60">
-              <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26 g-font-secondary g-color-gray-dark-v2 g-mb-25">Have a question?</h2>
+              <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-26  g-color-gray-dark-v2 g-mb-25">Have a question?</h2>
               <p class="mb-0">Want to receive a free quote or consultation, just drop us few lines and we will call you back!</p>
             </div>
 
@@ -1211,7 +1201,7 @@
          data-offset-top="400"
          data-compensation="#js-header"
          data-show-effect="zoomIn">
-        <i class="hs-icon hs-icon-arrow-top"></i>
+        <i class="fa fa-chevron-up"></i>
       </a>
     </main>
 
@@ -1223,10 +1213,10 @@
 
     <!-- JS Implementing Plugins -->
     <script src="assets/vendor/appear.js"></script>
-    <script src="assets/vendor/chosen/chosen.jquery.js"></script>
+    <!--<script src="assets/vendor/chosen/chosen.jquery.js"></script>-->
     <script src="assets/vendor/image-select/src/ImageSelect.jquery.js"></script>
-    <script src="assets/vendor/circles/circles.min.js"></script>
-    <script src="assets/vendor/slick-carousel/slick/slick.js"></script>
+    <!--<script src="assets/vendor/circles/circles.min.js"></script>-->
+    <!--<script src="assets/vendor/slick-carousel/slick/slick.js"></script>-->
     <!--<script src="assets/vendor/gmaps/gmaps.min.js"></script>-->
 
     <!-- JS Revolution Slider -->
@@ -1250,17 +1240,17 @@
     <script src="assets/js/components/hs.header.js"></script>
     <script src="assets/js/helpers/hs.hamburgers.js"></script>
     <script src="assets/js/components/hs.scroll-nav.js"></script>
-    <script src="assets/js/components/hs.select.js"></script>
+    <!--<script src="assets/js/components/hs.select.js"></script>-->
     <script src="assets/js/components/hs.onscroll-animation.js"></script>
     <script src="assets/js/components/hs.tabs.js"></script>
     <script src="assets/js/components/hs.progress-bar.js"></script>
     <!--<script src="assets/js/components/hs.chart-pie.js"></script>-->
-    <script src="assets/js/components/hs.carousel.js"></script>
+    <!--<script src="assets/js/components/hs.carousel.js"></script>-->
     <!--<script src="assets/js/components/gmap/hs.map.js"></script>-->
     <script src="assets/js/components/hs.go-to.js"></script>
 
     <!-- JS Customization -->
-    <script src="assets/js/custom.js"></script>
+    <!--<script src="assets/js/custom.js"></script>-->
 
     <!-- JS Plugins Init. -->
     <script>
@@ -1366,7 +1356,7 @@
 
       $(document).on('ready', function () {
         // initialization of carousel
-        $.HSCore.components.HSCarousel.init('.js-carousel');
+        // $.HSCore.components.HSCarousel.init('.js-carousel');
 
         // initialization of header
         $.HSCore.components.HSHeader.init($('#js-header'));
@@ -1395,10 +1385,10 @@
           duration: 700
         });
 
-        setTimeout(function() {
-          // initialization of select
-          $.HSCore.components.HSSelect.init('.js-custom-select');
-        }, 1);
+        // setTimeout(function() {
+        //   // initialization of select
+        //   $.HSCore.components.HSSelect.init('.js-custom-select');
+        // }, 1);
       });
 
       $(window).on('resize', function () {
